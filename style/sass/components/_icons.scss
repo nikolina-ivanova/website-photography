@@ -1,0 +1,9 @@
+/* ICONS */
+.icons{
+    @include flexbox($justify: center);
+}
+.img-icon{
+    width: 20px;
+    height: 20px;
+    padding: 1em;
+}

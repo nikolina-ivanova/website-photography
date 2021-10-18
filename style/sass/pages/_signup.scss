@@ -1,0 +1,53 @@
+.signup-box{
+    @include flexbox(column, $align: center);
+    background: rgba($light-color, 0.87);
+    border-radius: 1.2em;
+    padding: 2em 3em;
+    max-width: 450px;
+
+    h1 {
+        color: $accent-color;
+        display: inline;
+        font-weight: bolder;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+}
+
+input, .submitbtn{
+    border: none;
+    border-radius: 3em;
+    box-shadow: 0 2px 10px $gray;
+    margin-bottom: 1.2em;
+    margin-top: 0.5em;
+    width: 100%;   
+}
+
+input, label, .submitbtn{
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    display: block;
+}
+label{
+    padding: 0 1em;
+    color: $primary-color;
+}
+.submitbtn {
+    &:focus{
+    background: rgba($accent-color, 0.70);
+    color: $light-color;
+    font-size: 1.2em;
+    border: none;
+    margin-top: 1.2em;
+    cursor: pointer;
+    transition: 0.3s ease-in;  
+    font-family: 'Jost', sans-serif;
+    }
+    &:hover{
+        background: $accent-color;
+    }
+}
+input{
+    outline: none;
+}

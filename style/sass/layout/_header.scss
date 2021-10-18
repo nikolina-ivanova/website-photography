@@ -1,0 +1,65 @@
+/* HEADER */
+header{
+    @include flexbox(column, center, center);
+    height: 100vh;
+    background-size: cover;
+    color: $light-color;
+}
+
+/* Header Text */
+.header-text{
+    width: 80vw;
+    max-width: 700px;
+    margin: 7px;
+    text-align: center;
+    line-height: 30px;
+    padding: 2em 2em;
+
+    h1{
+        text-transform: uppercase;
+        font-size: 4em;
+        font-weight: bold;
+        animation: totop 1.5s linear;
+        margin: 0.75em 0;
+    }
+}
+
+/* headline animation */
+@keyframes totop {
+    0% {
+        transform: translateY(60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bg-color{
+    background: rgba(168, 168, 168, 0.651);
+}
+
+
+/* BACKGROUND IMAGE */
+.header-home{
+    background-image:url(/images/home-bg.jpg);
+}
+
+.header-gallery{
+    background-image:url(/images/img6.jpg);
+}
+
+.header-about{
+    background-image: url(/images/img10.jpg);
+    transition: 1s ease-in-out;
+    position: relative;
+}
+
+.header-blog{
+    background-image: url(/images/blog/camera2.jpg);
+}
+
+.header-signup{
+    background-image: url(/images/bg.jpg);
+}

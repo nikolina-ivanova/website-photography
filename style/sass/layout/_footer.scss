@@ -1,0 +1,7 @@
+/* FOOTER */
+footer{
+    @include flexbox(column, center);
+    background: $light-gray;
+    padding: 1em;
+    padding-top: 2em;
+}

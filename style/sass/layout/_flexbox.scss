@@ -1,0 +1,30 @@
+/* FLEXBOX */
+.flex-column{
+    @include flexbox(column, center, center);
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.flex-row{
+    @include flexbox(row, $justify: center);
+    column-gap: 3em;
+}
+
+.flex-item{
+    flex: 1 1 0;
+}
+
+/* IMAGES */
+.gallery-box{
+    @include flexbox(column, $justify: flex-start);
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+@media screen and (max-width: 764px){
+    .flex-row{
+        @include flexbox(column);
+    }
+}

@@ -1,0 +1,20 @@
+// BUTTONS
+.signupbn{
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0.3em 2.5em;
+    border: 1px solid $light-color;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    color: $light-color;
+    transition: 0.35s ease-in;    
+}
+
+.signupbn:hover{
+    background: $light-gray;
+    color: $dark-color;
+    transform: translate(2px)
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+<body>
+    <header class="header-gallery">
+        <div class="header-text">
+            <h1>Gallery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos suscipit nam nobis, 
+                recusandae non quam cupiditate aperiam quasi praesentium aspernatur possimus. Quis, nesciunt?
+            </p>
+            
+        </div>
+    </header>
+    <nav id="navbar">
+        <div class="nav-item">
+            <a class="nav-logo" id="nav-logo" href="index.html">N I</a>
+            <img onclick="responsiveNav()" id="nav-icon" class="nav-icon" src="images/icon-open.png" alt="nav-icon"></img>
+            <ul id="nav-links" class="nav-links">
+                    <li><a id="navcolor" href="index.html">Home</a>
+                    <li><a href="about.html">About</a>
+                    <li><a class="active" href="">Gallery</a>
+                    <li><a href="blog.html">Blog</a>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-column">
+        <section class="flex-row">
+            <article class="gallery-box">
+                <img class="img-style img-gallery" src="images/img1.jpeg" alt="Mountains">
+                <h3>Mountains</h3>
+                <p class="p-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem magnam esse in sed minus tenetur consectetur!</p>
+            </article>
+            <article class="gallery-box">
+                <img class="img-style img-gallery" src="images/img2.jpeg" alt="Beach">
+                <h3>Beach</h3>
+                <p class="p-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem esse in sed minus tenetur consectetur!</p>
+            </article>
+        </section>
+        <section  class="flex-row">
+            <article class="gallery-box">
+                <img class="img-style img-gallery" src="images/img3.jpeg" alt="Sunset">
+                <h3>Sunset</h3>
+                <p class="p-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem magnam esse in sed debitis non eaque minus tenetur consectetur!</p>
+            </article>
+            <article class="gallery-box">
+                <img class="img-style img-gallery" src="images/img7.jpg" alt="Flowers">
+                <h3>Flowers</h3>
+                <p class="p-gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem magnam esse in sed debitis non eaque minus tenetur consectetur!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="icons">
+            <a href=""><img class="img-icon" src="images/icons/facebook.png" alt="facebook" title="facebook"></a>
+            <a href=""><img class="img-icon" src="images/icons/instagram.png" alt="instagram" title="instagram"></a>
+            <a href=""><img class="img-icon" src="images/icons/twitter.png" alt="twitter" title="twitter"></a>
+            <a href=""><img class="img-icon" src="images/icons/pinterest.png" alt="pinterest" title="pinterest"></a>
+            <a href=""><img class="img-icon" src="images/icons/youtube.png" alt="youtube" title="youtube"></a>
+        </div>
+        <div>Terms of Use | Privacy Policy</div>
+        <div> &copy; 2021 Nikolina Ivanova</div>
+    </footer>
+
+    <script src="js/main.js"> </script>
+</body>
+</html>
