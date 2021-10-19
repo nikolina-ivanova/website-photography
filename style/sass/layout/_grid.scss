@@ -42,28 +42,29 @@
     .grid-container{
         grid-template-columns: 1fr 7fr 1fr;
         grid-template-rows: 100vh auto auto 100px ;
-    }
-    .grid-header{
-        grid-column:  1 / end;
-        grid-row: 1 / 2;
-    }
-    .grid-nav{
-        grid-column: 1 / end;
-        grid-row: 1 / 2;
-    }
-    .grid-main{
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-    }
-    .grid-aside{
-        position: static;
-        height: auto;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    .grid-footer{
-        grid-column: 1 / end  ;
-        grid-row: 4 / end;
+
+        & header{
+            grid-column:  1 / end;
+            grid-row: 1 / 2;
+        }
+        & nav{
+            grid-column: 1 / end;
+            grid-row: 1 / 2;
+        }
+        & main{
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+        & aside{
+            position: static;
+            height: auto;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        & footer{
+            grid-column: 1 / end  ;
+            grid-row: 4 / end;
+        }
     }
 
     .grid-item{
