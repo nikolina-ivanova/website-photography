@@ -1,6 +1,6 @@
 /* ICONS */
 .icons{
-    @include flexbox($justify: center);
+    @include flexbox();
 }
 .img-icon{
     width: 20px;

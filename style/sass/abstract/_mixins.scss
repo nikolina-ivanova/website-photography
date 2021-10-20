@@ -1,6 +1,28 @@
-@mixin flexbox ($direction: row, $align: stretch, $justify: flex-start) {
+// flexbox
+@mixin flexbox ($direction: row, $align: center, $justify: center) {
     display: flex;
     flex-direction: $direction;
     align-items: $align;
     justify-content: $justify;
+}
+
+// cover image 1:1
+@mixin cover-img($width: 100%) {
+    object-fit: cover;
+    width: $width;
+    aspect-ratio: 1 / 1;
+}
+
+@mixin dark-mode($bg-color, $text-color) {
+    background: $bg-color;
+    color: $text-color;
+    a, aside a:hover{
+        color: $text-color;
+    }
+    footer{
+        color: $primary-color;
+    }
+    .img-about {
+        border-color: $bg-color;
+    }
 }

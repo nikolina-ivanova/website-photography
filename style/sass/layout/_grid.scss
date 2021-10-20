@@ -1,8 +1,10 @@
 // GRID Container
 .grid-container{
     display: grid;
-    grid-template-columns: 10% 6fr 2fr 10%;
-    grid-template-rows: 100vh auto 100px ;
+    grid-template-columns: 1fr 6fr 2fr 1fr;
+    grid-template-rows: 100vh auto 100px;
+    // gap after the last column
+    gap: 2em;
 }
 /* GRID Items */
 .grid-container{
@@ -32,10 +34,10 @@
     }
 }
 
-.grid-item{
-    padding: 1em;
-    padding-top: 6em;
-}
+// .grid-item{
+//     padding: 1em;
+//     padding-top: 6em;
+// }
 
 /* MEDIA */
 @media screen and (max-width: 900px){

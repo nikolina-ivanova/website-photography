@@ -1,6 +1,6 @@
 /* FOOTER */
 footer{
-    @include flexbox(column, center);
+    @include flexbox(column);
     background: $light-gray;
     padding: 1em;
     padding-top: 2em;

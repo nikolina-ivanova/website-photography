@@ -1,5 +1,5 @@
 .signup-box{
-    @include flexbox(column, $align: center);
+    @include flexbox(column);
     background: rgba($light-color, 0.87);
     border-radius: 1.2em;
     padding: 2em 3em;

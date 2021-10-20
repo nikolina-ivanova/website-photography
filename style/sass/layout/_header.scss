@@ -1,6 +1,6 @@
 /* HEADER */
 header{
-    @include flexbox(column, center, center);
+    @include flexbox(column);
     height: 100vh;
     background-size: cover;
     color: $light-color;
@@ -43,23 +43,23 @@ header{
 
 /* BACKGROUND IMAGE */
 .header-home{
-    background-image:url(/images/home-bg.jpg);
+    background-image:url(../../images/home-bg.jpg);
 }
 
 .header-gallery{
-    background-image:url(/images/img6.jpg);
+    background-image:url(../../images/img6.jpg);
 }
 
 .header-about{
-    background-image: url(/images/img10.jpg);
+    background-image: url(../../images/img10.jpg);
     transition: 1s ease-in-out;
     position: relative;
 }
 
 .header-blog{
-    background-image: url(/images/blog/camera2.jpg);
+    background-image: url(../../images/blog/camera2.jpg);
 }
 
 .header-signup{
-    background-image: url(/images/bg.jpg);
+    background-image: url(../../images/bg.jpg);
 }

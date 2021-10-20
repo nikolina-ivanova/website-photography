@@ -16,13 +16,14 @@ nav {
 }
 
 // nav logo
-.nav-logo{
+a.nav-logo{
     font-family: 'Ephesis', cursive;
     text-decoration: none;
     color: $dark-color;
     font-size: 1.6em;
     letter-spacing: 0.18em;
     z-index: 100;
+    color: $primary-color;
 }
 
 /* responsive nav icon */
@@ -76,7 +77,7 @@ nav {
 /* add background on scroll*/
 .nav-scroll{
     background: $light-color;
-    box-shadow: 0 2px 10px $light-gray;
+    // box-shadow: 0 2px 10px $light-gray;
 }
 
 /* Display responsive menu */

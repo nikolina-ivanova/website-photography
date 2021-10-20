@@ -8,21 +8,29 @@ html{
 }
 body{
     font-size: 16px;
-    background: $primary-bg-color;
+}
+
+//change color between light and dark mode
+.dark-mode{
+    @include dark-mode($secondary-color, $light-color);
+}
+.light-mode{
+    @include dark-mode($primary-bg-color, $primary-color);
 }
 
 h2{
     font-size: 1.6em;
     letter-spacing: 0.1em;
 }
+
 h2, h3{
-    padding: 0.5em 0;
+    padding: 1em 0;
     font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
 }
 p{
-    padding: 1em 0;
+    padding-bottom: 1em;
 }
 
 /* COLORS */

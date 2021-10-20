@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="../style/css/style.css">
     <title>Sign Up</title>
 </head>
 <body>
@@ -13,20 +13,19 @@
             <h1>Sign Up</h1>
             <form>
                 <label for="name">Name</label>
-                <input type="text" id="name" onclick="this.value=''">
+                <input type="text" id="name">
                 <label for="email">Email</label>
                 <input type="text" id="email">
                 <label for="password">Password</label>
                 <input type="password" id="password">
                 <div id="passwordMessage" class="displayMessage"></div>
-                <!-- <button class="submitbtn" type="submit" onclick="signUpFunction()">Sign Up</button> -->
+                <button class="submitbtn" type="button" onclick="signUpFunction()">Sign Up</button>
             </form>     
-            <button class="submitbtn" type="submit" onclick="signUpFunction()">Sign Up</button>
             <a href="index.html" class="backbtn">← Back To Website</a>
         </main>
         <div id="message"></div>
     </header>
 
-    <script src="js/signup.js"></script>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

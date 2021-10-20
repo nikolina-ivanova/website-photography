@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="../style/css/style.css">
     <title>About</title>
 </head>
 <body>
@@ -12,12 +12,16 @@
         <div class="header-text">
             <h1>About</h1> 
         </div>
-        <img class="img-about" src="images/about.jpg" alt="img">
+        <img class="img-about" src="../images/about.jpg" alt="img">
     </header>
     <nav id="navbar">
         <div class="nav-item">
+            <div class="theme">
+                <div class="themebtn"></div> 
+                <img id="toggle" class="circle light-theme" onclick="changeTheme()" src="../images/icons/moon.png"></img>
+            </div>
             <a class="nav-logo" id="nav-logo" href="index.html">N I</a>
-            <img onclick="responsiveNav()" id="nav-icon" class="nav-icon" src="images/icon-open.png" alt="nav-icon"></img>
+            <img onclick="responsiveNav()" id="nav-icon" class="nav-icon" src="../images/icon-open.png" alt="nav-icon"></img>
             <ul id="nav-links" class="nav-links">
                     <li><a id="navcolor" href="index.html">Home</a>
                     <li><a class="active" href="about.html">About</a>
@@ -42,38 +46,38 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus perferendis expedita dolorum, repellendus vitae quia voluptatem ut recusandae ea eligendi voluptatum quos? Esse, enim. Officiis, reprehenderit deserunt? Possimus nemo repellendus nisi provident adipisci non labore quos repellat corrupti sunt? Eaque, harum nam! Explicabo, reiciendis quisquam placeat aspernatur libero repudiandae?
                 </p>
-                <img src="images/cameras.jpg" alt="" width="100%">
+                <img src="../images/cameras.jpg" alt="" width="100%">
             </article>
         </section>
+        
         <h2>Recent Work</h2>
         <section class="flex-row">
             <div class="flex-item">
-                <img class="img-style" src="images/img10.jpg" alt="" width="100%">
+                <img class="img-style" src="../images/img10.jpg" alt="" width="100%">
                 <h3>title</h3>
             </div>
             <div class="flex-item">
-                <img class="img-style" src="images/img11.jpg" alt="" width="100%">
+                <img class="img-style" src="../images/img11.jpg" alt="" width="100%">
                 <h3>title</h3>
             </div>
             <div class="flex-item">
-                <img class="img-style" src="images/img5.jpeg" alt="" width="100%">
+                <img class="img-style" src="../images/img5.jpeg" alt="" width="100%">
                 <h3>title</h3>
             </div>
-            
         </section>
     </main>
     <footer class="about-content">
         <div class="icons">
-            <a href=""><img class="img-icon" src="images/icons/facebook.png" alt="facebook" title="facebook"></a>
-            <a href=""><img class="img-icon" src="images/icons/instagram.png" alt="instagram" title="instagram"></a>
-            <a href=""><img class="img-icon" src="images/icons/twitter.png" alt="twitter" title="twitter"></a>
-            <a href=""><img class="img-icon" src="images/icons/pinterest.png" alt="pinterest" title="pinterest"></a>
-            <a href=""><img class="img-icon" src="images/icons/youtube.png" alt="youtube" title="youtube"></a>
+            <a href=""><img class="img-icon" src="../images/icons/facebook.png" alt="facebook" title="facebook"></a>
+            <a href=""><img class="img-icon" src="../images/icons/instagram.png" alt="instagram" title="instagram"></a>
+            <a href=""><img class="img-icon" src="../images/icons/twitter.png" alt="twitter" title="twitter"></a>
+            <a href=""><img class="img-icon" src="../images/icons/pinterest.png" alt="pinterest" title="pinterest"></a>
+            <a href=""><img class="img-icon" src="../images/icons/youtube.png" alt="youtube" title="youtube"></a>
         </div>
         <div>Terms of Use | Privacy Policy</div>
         <div> &copy; 2021 Nikolina Ivanova</div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

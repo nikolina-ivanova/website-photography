@@ -1,13 +1,13 @@
 /* IMAGES */
 .img-style{
-    padding-top: 2em;
-    padding-bottom: 1em;
+    // padding-top: 2em;
+    // padding-bottom: 1em;
     width: 100%;
     max-height: 500px;
     object-fit: cover;
     transition: 0.5s ease-in-out;
     box-sizing: border-box;
-    padding: 3em;
+    // padding: 3em;
 }
 /* image hover effect */
 .img-style:hover{
@@ -16,9 +16,7 @@
 }
 
 .img-about{
-    object-fit: cover;
-    width: 50vw;
-    height: 50vw;
+    @include cover-img(50%);
     border-radius: 50%;
     border: 0.5em solid $light-color;
     position: absolute;
@@ -30,10 +28,23 @@
     transition: top 1s ease-in-out;
 }
 
+/* IMAGES */
+.gallery-box{
+    @include flexbox(column);
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+}
+
+.img-gallery {
+    @include cover-img(100%);
+}
+
 @media screen and (min-width: 1200px){
     .img-about{
-        width: 30vw;
-        height: 30vw;
+        @include cover-img(30%);
         top: calc(100vh - 15vw);
     }
 }

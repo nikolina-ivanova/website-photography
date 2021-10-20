@@ -18,3 +18,37 @@
     transform: translate(2px)
 }
 
+//change theme
+.theme {
+    position: relative;
+}
+.themebtn {
+    background: $dark-color;
+    
+    box-sizing: border-box;
+    width: 50px;
+    height: 25px;
+    border-radius: 55px;
+}
+.circle {
+    background: $light-color;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.5px;
+    transition: left 0.4s ease-in-out;
+    padding: 3px;
+    box-sizing: border-box;
+
+    &.light-theme{
+        left: 1.5px;
+    }
+    &.dark-theme{
+        left: calc(100% - 25px + 1.5px); //move to right
+    }
+}
+
+
+
+
